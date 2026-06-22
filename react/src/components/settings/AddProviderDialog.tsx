@@ -46,6 +46,18 @@ const PROVIDER_OPTIONS = [
     },
   },
   {
+    value: 'AtlasCloud',
+    label: 'Atlas Cloud',
+    data: {
+      apiUrl: 'https://api.atlascloud.ai/v1/',
+      models: {
+        'deepseek-ai/deepseek-v4-pro': { type: 'text' },
+        'deepseek-ai/deepseek-v4-flash': { type: 'text' },
+        'deepseek-ai/DeepSeek-V3.1': { type: 'text' },
+      },
+    },
+  },
+  {
     value: 'wavespeed',
     label: 'Wavespeed',
     mediaOnly: true,
