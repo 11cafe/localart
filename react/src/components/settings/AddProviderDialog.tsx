@@ -116,6 +116,28 @@ const PROVIDER_OPTIONS = [
     },
   },
   {
+    value: 'minimax',
+    label: 'MiniMax',
+    data: {
+      apiUrl: 'https://api.minimax.io/v1/',
+      models: {
+        'MiniMax-M3': { type: 'text' },
+        'MiniMax-M2.7': { type: 'text' },
+      },
+    },
+  },
+  {
+    value: 'minimax_cn',
+    label: 'MiniMax (China)',
+    data: {
+      apiUrl: 'https://api.minimaxi.com/v1/',
+      models: {
+        'MiniMax-M3': { type: 'text' },
+        'MiniMax-M2.7': { type: 'text' },
+      },
+    },
+  },
+  {
     value: '硅基流动',
     label: '硅基流动 (SiliconFlow)',
     data: { apiUrl: 'https://api.siliconflow.cn/v1/' },

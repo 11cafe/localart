@@ -40,6 +40,14 @@ export const PROVIDER_NAME_MAPPING: {
     name: 'ComfyUI',
     icon: 'https://framerusercontent.com/images/3cNQMWKzIhIrQ5KErBm7dSmbd2w.png',
   },
+  minimax: {
+    name: 'MiniMax',
+    icon: 'https://platform.minimax.io/favicon.ico',
+  },
+  minimax_cn: {
+    name: 'MiniMax (China)',
+    icon: 'https://platform.minimaxi.com/favicon.ico',
+  },
 }
 
 // Tool call name mapping
