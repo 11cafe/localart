@@ -59,6 +59,14 @@ DEFAULT_PROVIDERS_CONFIG: AppConfig = {
         'api_key': '',
         'max_tokens': 8192,
     },
+    'atlascloud': {
+        'models': {
+            'deepseek-ai/deepseek-v4-pro': {'type': 'text'},
+        },
+        'url': 'https://api.atlascloud.ai/v1/',
+        'api_key': '',
+        'max_tokens': 8192,
+    },
 
 }
 
