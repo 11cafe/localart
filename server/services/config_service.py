@@ -9,7 +9,7 @@ from typing import Dict, TypedDict, Literal, Optional
 
 
 class ModelConfig(TypedDict, total=False):
-    type: Literal["text", "image", "video"]
+    type: Literal["text", "image", "video", "music"]
     is_custom: Optional[bool]
     is_disabled: Optional[bool]
 
@@ -58,6 +58,18 @@ DEFAULT_PROVIDERS_CONFIG: AppConfig = {
         'url': 'https://api.openai.com/v1/',
         'api_key': '',
         'max_tokens': 8192,
+    },
+    'minimax': {
+        'models': {
+            'music-3.0': {'type': 'music'},
+            'music-2.6': {'type': 'music'},
+            'music-3.0-free': {'type': 'music'},
+            'music-2.6-free': {'type': 'music'},
+            'music-cover': {'type': 'music'},
+            'music-cover-free': {'type': 'music'},
+        },
+        'url': 'https://api.minimax.io',
+        'api_key': '',
     },
 
 }

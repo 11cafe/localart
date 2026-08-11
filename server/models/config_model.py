@@ -15,4 +15,4 @@ class ModelInfo(TypedDict):
     provider: str
     model: str # For tool type, it is the function name
     url: str
-    type: Literal['text', 'image', 'tool', 'video']
+    type: Literal['text', 'image', 'tool', 'video', 'music']

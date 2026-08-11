@@ -49,6 +49,7 @@ from tools.generate_image_by_recraft_v3_replicate import (
     generate_image_by_recraft_v3_replicate,
 )
 from tools.generate_video_by_hailuo_02_jaaz import generate_video_by_hailuo_02_jaaz
+from tools.generate_music_by_minimax_jaaz import generate_music_by_minimax_jaaz
 from tools.generate_video_by_veo3_fast_jaaz import generate_video_by_veo3_fast_jaaz
 from tools.generate_image_by_midjourney_jaaz import generate_image_by_midjourney_jaaz
 from services.config_service import config_service
@@ -132,6 +133,12 @@ TOOL_MAPPING: Dict[str, ToolInfo] = {
         "type": "video",
         "provider": "jaaz",
         "tool_function": generate_video_by_hailuo_02_jaaz,
+    },
+    "generate_music_by_minimax_jaaz": {
+        "display_name": "MiniMax Music",
+        "type": "music",
+        "provider": "minimax",
+        "tool_function": generate_music_by_minimax_jaaz,
     },
     "generate_video_by_kling_v2_jaaz": {
         "display_name": "Kling v2.1 Standard",
