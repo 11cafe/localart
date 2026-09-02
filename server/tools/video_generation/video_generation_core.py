@@ -9,6 +9,7 @@ from models.config_model import ModelInfo
 from ..video_providers.video_base_provider import get_default_provider, VideoProviderBase
 # Import all providers to ensure automatic registration (don't delete these imports)
 from ..video_providers.volces_provider import VolcesVideoProvider  # type: ignore
+from ..video_providers.minimax_provider import MiniMaxVideoProvider  # type: ignore
 from .video_canvas_utils import (
     send_video_start_notification,
     send_video_error_notification,

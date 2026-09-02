@@ -59,6 +59,13 @@ DEFAULT_PROVIDERS_CONFIG: AppConfig = {
         'api_key': '',
         'max_tokens': 8192,
     },
+    'minimax': {
+        'models': {
+            'MiniMax-H3': {'type': 'video'},
+        },
+        'url': 'https://api.minimax.io',
+        'api_key': '',
+    },
 
 }
 
