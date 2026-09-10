@@ -59,6 +59,14 @@ DEFAULT_PROVIDERS_CONFIG: AppConfig = {
         'api_key': '',
         'max_tokens': 8192,
     },
+    'minimax': {
+        'models': {
+            'image-01': {'type': 'image'},
+            'image-01-live': {'type': 'image'},
+        },
+        'url': 'https://api.minimax.io/v1/image_generation',
+        'api_key': '',
+    },
 
 }
 
